@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rikkei Coffee - Landing Page (Summer Promotion)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--1. Thanh điều hướng -->
+    <header>
+        <div class="main-container">
+            <div class = "logo">
+                Rikkei Coffee
+            </div>
+            <nav>
+                <ul>
+                    <a href = "#" class="nav-item">Trang chủ</a>
+                    <a href = "#" class="nav-item">Combo</a>
+                    <a href = "#" class="nav-item">Đăng ký</a>
+                    <a href = "#" class="nav-item">Liên hệ</a>
+                </ul>
+            </nav>
+            <!-- 1.1. Menu 3 gạch -->
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <!--2. Phần mở đầu -->
+        <section class="introduction">
+            <div class=main-container>
+                <p class="promotion-description">Khuyến mãi mùa hè</p>
+                <h1>Mùa hè sảng khoái, giảm đến 30%</h1>
+                <p class="promotion-description">Từ 01/06 đến 31/08, các combo đồ uống mát lạnh và bánh ngọt tại Rikkei Coffee đều có giá ưu đãi.</p>
+                <button class ="introduction-get-code">Nhận ưu đãi</button>
+            </div>
+        </section>
+        <!--3. Combo mùa hè -->
+        <section class = "menu-block">
+            <div  class=main-container>
+                <h2>Combo mùa hè</h2>
+                <!--3.1 Menu grid -->
+                <div class="menu-grid">
+                    <div class = "menu-item">
+                        <div class="photo-label">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfq6i4_l4w0xBk-5e4BClAOy6O0Id7Z1sQGQa_GxTStg&s=10" alt="Mo ta anh">
+                            <span class="label">-20%</span>                       
+                        </div>
+                            <h3>Combo Sáng nhẹ</h3>
+                        <p class="combo-description">Cà phê sữa và bánh croissant</p>
+                        <p class="original-price">Giá gốc: 54.000 đ</p>
+                        <p class="sale-price">43.200 đ</p>
+                    </div>
+                    <div class = "menu-item">
+                        <div class="photo-label">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfq6i4_l4w0xBk-5e4BClAOy6O0Id7Z1sQGQa_GxTStg&s=10" alt="Mo ta anh">                        
+                            <span class="label">-15%</span>
+                        </div>
+                        <h3>Combo Mát lạnh</h3>
+                        <p class="combo-description">Cold brew và trà đào</p>
+                        <p class="original-price">Giá gốc: 74.000 đ</p>
+                        <p class="sale-price">62.900 đ</p>
+                    </div>
+                    <div class = "menu-item">
+                        <div class="photo-label">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfq6i4_l4w0xBk-5e4BClAOy6O0Id7Z1sQGQa_GxTStg&s=10" alt="Mo ta anh">                       
+                            <span class="label">-25%</span>
+                        </div>                       
+                        <h3>Combo Đôi bạn</h3>
+                        <p class="combo-description">Hai bạc xỉu và hai bánh croissant</p>
+                        <p class="original-price">Giá gốc: 114.000 đ</p>
+                        <p class="sale-price">85.500 đ</p>
+                    </div>
+                    <div class = "menu-item">
+                        <div class="photo-label">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfq6i4_l4w0xBk-5e4BClAOy6O0Id7Z1sQGQa_GxTStg&s=10" alt="Mo ta anh">                       
+                            <span class="label">-10%</span>
+                        </div>                       
+                        <h3>Combo Giải nhiệt</h3>
+                        <p class="combo-description">Cacao đá xay và trà đào</p>
+                        <p class="original-price">Giá gốc: 77.000 đ</p>
+                        <p class="sale-price">69.300 đ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--4. Đăng ký nhận ưu đãi -->
+        <section class="registration-block">
+            <div  class=main-container>
+                <h2>Đăng ký nhận mã ưu đãi</h2>
+                <!--4.1 Điền form -->
+                <form class="registration-form">
+                    <div class = "input-line">
+                        <label for="name" class="input-label">Họ tên</label>
+                        <input class="input" type="text" id="name" required placeholder="Nguyễn Văn An">
+                    </div>
+                    <div class = "input-line">
+                        <label for="email" class="input-label">Email</label>
+                        <input class="input" type="email" id="email" required placeholder="ban@example.com">
+                    </div>
+                    <div class = "input-line">
+                        <label for ="branch" class="input-label">Chi nhánh</label>
+                        <select name="branch" id="branch" class="input">
+                            <option value="hanoi">Hà Nội</option>
+                            <option value="danang">Đà Nẵng</option>
+                            <option value="hcm">TP. Hồ Chí Minh</option>
+                        </select>
+                    </div>
+                    <button class="registration-get-code">Nhận mã ưu đãi</button>                  
+                </form>
+            </div>
+        </section>
+    </main>
+    <!--5. Chân trang -->
+    <footer>
+        <div class="main-container">
+            <div class="footer-content">
+                <p class="footer-brandname">Rikkei Coffee</p>
+                <p class="promotion-description">21 Phố Mẫu, Quận Cầu Giấy, Hà Nội</p>
+                <p class="promotion-description">Mở cửa 07:00 - 22:00 mỗi ngày</p>
+                <p class="promotion-description">Điện thoại: 0900 000 000</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
